@@ -1,4 +1,9 @@
 from functions import *
+import argparse
 
-#generate_summary( "Data\churn.txt", 4)
-generate_summary( "Data\msft.txt", 4)
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--path', type=str, required=True)
+    args = parser.parse_args()
+
+    generate_summary(args.path, 3)
