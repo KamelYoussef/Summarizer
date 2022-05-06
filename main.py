@@ -1,4 +1,4 @@
-from functions import *
+from functions import generate_summary
 import argparse
 
 if __name__ == '__main__':
